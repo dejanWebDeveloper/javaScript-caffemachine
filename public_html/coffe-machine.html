@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Coffee Mashine - javaScript project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dejan Jovanovic">
+    <meta name="description" content="Caffe-machine">
+    <meta name="keywords" content="addwater, addcoffe, addmilk, makeshortespresso, makelongespresso, makecapuchino">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="caffe-mashine">
+        <div id="caffe-screen" class="d-flex flex-column justify-between">
+            <p>Credit: <span id="credit"> </span>RSD</p>
+            <p id="message" class="text-center">DISPLAY MESAGE</p>
+
+            <p id="status">Water: <span id="water-status"> </span> Coffe: <span id="coffee-status"> </span> Milk <span
+                    id="milk-status"> </span></p>
+        </div>
+        <div>
+
+        </div>
+        <button onclick="coffeMachine.addCredit();" id="add-credit" class="d-block">Add Credit</button>
+        <div class="d-flex justify-between">
+            <button onclick="coffeMachine.addWater();" id="add-water">ADD WATER</button>
+            <button onclick="coffeMachine.addCoffe();" id="add-coffee">ADD COFFEE</button>
+            <button onclick="coffeMachine.addMilk();" id="add-milk">ADD MILK</button>
+        </div>
+        <div class="d-flex justify-between">
+            <button onclick="coffeMachine.makeShortEspresso();" id="short-espresso">Short Espreso</button>
+            <button onclick="coffeMachine.makeLongEspresso();" id="long-espresso">Long Espreso</button>
+            <button onclick="coffeMachine.makeCapuchino();" id="capuchino">Capuchino</button>
+        </div>
+    </div>
+    <script src="javaScript/coffeMachine.js" type="text/javascript"></script>
+</body>
+
+</html>
